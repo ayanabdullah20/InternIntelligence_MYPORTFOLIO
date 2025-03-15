@@ -1,0 +1,365 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to right, #f7b731, #f28d6b);
+    color: white;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f7b731;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 80px; /* Avoid overlap with fixed navbar */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Home Section */
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.intro {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: slideIn 1.5s ease-out;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: slideIn 2s ease-out;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: #f7b731;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #f7b731;
+    color: white;
+    transform: scale(1.1);
+}
+#about {
+    padding: 40px 15px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.hobbies {
+    margin-top: 20px;
+}
+
+.hobbies h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.hobbies p {
+    font-size: 1rem;
+}
+#skills {
+    padding: 80px 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#projects {
+    padding: 80px 20px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.05);
+}
+
+.project-link {
+    display: inline-block;
+    margin: 10px 5px;
+    color: #f7b731;
+    text-decoration: none;
+    border: 2px solid #f7b731;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.project-link:hover {
+    background: #f7b731;
+    color: white;
+}
+#testimonials {
+    padding: 80px 20px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.testimonial {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial .author {
+    font-weight: bold;
+    margin-top: 10px;
+}
+#contact {
+    padding: 80px 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    background: white;
+    box-shadow: 0 0 10px rgba(247, 183, 49, 0.7);
+    outline: none;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#contact-form button {
+    padding: 12px 30px;
+    background: white;
+    color: #f7b731;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: #f7b731;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f7b731;
+}
+
+/* Footer */
+footer {
+    background: black;
+    padding: 20px;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
+}
