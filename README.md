@@ -19,7 +19,7 @@ This is a personal portfolio website I created during my internship at **InternI
 
 ## Setup Instructions
 1. Clone this repository:  
-   `git clone https://github.com/your-username/InternIntelligence_MYPORTFOLIO.git`
+   `git clone https://github.com/ayanabdullah20/InternIntelligence_MYPORTFOLIO.git`
    
 2. Navigate to the project folder:  
    `cd InternIntelligence_MYPORTFOLIO`
